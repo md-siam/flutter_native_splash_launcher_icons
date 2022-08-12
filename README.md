@@ -8,11 +8,13 @@
 
 <img align="right" src="screenshots/store_icons/icon1.png" height="190"></img>
 
-This repo is for teaching us how to implement the "native splash screen" in flutter & also how to generate "app icon" automatically for iOS, Android, & Web platforms. You can follow this [YouTube](https://www.youtube.com/watch?v=eMHbgIgJyUQ) video to learn about [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons) package.
+This repo is for teaching us how to implement the "native splash screen" in flutter & also how to generate "app icon" automatically for iOS, Android, & Web platforms.<br>
+Detail information of each of the process is given below with application demo screenshots.
 
 ## Native Splash Screen
 
-All images mush be a PNG file
+You can follow this [YouTube](https://www.youtube.com/watch?v=dB0dOnc2k10) video to learn about [flutter_native_splash](https://pub.dev/packages/flutter_native_splash) package.<br>
+**All the images mush be in .png file format**
 
 ```yaml
 dependencies:
@@ -38,6 +40,7 @@ $ flutter pub run flutter_native_splash:create
 
 ## App-Icon Generator Process
 
+You can follow this [YouTube](https://www.youtube.com/watch?v=eMHbgIgJyUQ) video to learn about [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons) package.<br>
 In `pubspec.yaml`, copy and pest the following into the **dev_dependencies** section.
 
 ```yaml
@@ -68,17 +71,15 @@ $ flutter pub get
 $ flutter pub run flutter_launcher_icons:main
 ```
 
-<h3><p align="center">DONE WITH APP ICON</p></h3>
-
 ## App Demo
 
 <table align="center" style="margin: 0px auto;">
   <tr>
     <th align="center">iOS Simulator</th>
-    <th align="center">Android Emulator</th>
+    <th align="center">Physical Android Device</th>
   </tr>
   <tr>
-    <td align="center"><img align="right" src="screenshots/gif/ios_simulator.gif" height="500"></img></td>
-    <td align="center"><img align="right" src="screenshots/gif/android_emulator.gif" height="500"></img></td>
+    <td align="center"><img align="right" src="screenshots/gif/iphone.gif" height="500"></img></td>
+    <td align="center"><img align="right" src="screenshots/gif/android.gif" height="500"></img></td>
   </tr>
 </table>
