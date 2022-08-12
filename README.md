@@ -38,6 +38,12 @@ $ flutter pub get
 $ flutter pub run flutter_native_splash:create
 ```
 
+To remove the splash screen, in terminal, write:
+
+```shell
+$ flutter pub run flutter_native_splash:remove
+```
+
 ## App-Icon Generator Process
 
 You can follow this [YouTube](https://www.youtube.com/watch?v=eMHbgIgJyUQ) video to learn about [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons) package.<br>
