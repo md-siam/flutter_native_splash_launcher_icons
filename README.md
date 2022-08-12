@@ -20,6 +20,12 @@ dependencies:
     sdk: flutter
   # For native splash screen
   flutter_native_splash: ^2.2.7
+
+flutter_native_splash:
+  # color: "#f5cb42"
+  background_image: assets/splash_screen/background.png
+  image: assets/splash_screen/flutter_logo.png
+  web: false
 ```
 
 Now, in terminal:

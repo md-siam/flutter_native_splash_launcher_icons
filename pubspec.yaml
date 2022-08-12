@@ -40,6 +40,7 @@ flutter_native_splash:
   # color: "#f5cb42"
   background_image: assets/splash_screen/background.png
   image: assets/splash_screen/flutter_logo.png
+  web: false
 
 dev_dependencies:
   flutter_test:
