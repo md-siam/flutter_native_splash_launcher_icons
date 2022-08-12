@@ -10,6 +10,26 @@
 
 This repo is for teaching us how to implement the "native splash screen" in flutter & also how to generate "app icon" automatically for iOS, Android, & Web platforms. You can follow this [YouTube](https://www.youtube.com/watch?v=eMHbgIgJyUQ) video to learn about [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons) package.
 
+## Native Splash Screen
+
+All images mush be a PNG file
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  # For native splash screen
+  flutter_native_splash: ^2.2.7
+```
+
+Now, in terminal:
+
+```shell
+$ flutter clean
+$ flutter pub get
+$ flutter pub run flutter_native_splash:create
+```
+
 ## App-Icon Generator Process
 
 In `pubspec.yaml`, copy and pest the following into the **dev_dependencies** section.
@@ -19,6 +39,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.1
+  # For generating launch icon
   flutter_launcher_icons: ^0.10.0
 
 flutter_icons:
