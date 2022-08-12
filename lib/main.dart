@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Native Splash & App Icon Generator',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home:
+          const MyHomePage(title: 'Flutter Native Splash\nApp Icon Generator'),
     );
   }
 }
@@ -40,31 +41,38 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        centerTitle: true,
+        title: Text(
+          widget.title,
+          textAlign: TextAlign.center,
+        ),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-              style: TextStyle(
-                fontFamily: "DynaPuff",
-                fontSize: 20,
-                color: Colors.grey,
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                'You have pushed the button this many times:',
+                style: TextStyle(
+                  fontFamily: "DynaPuff",
+                  fontSize: 20,
+                  color: Colors.grey,
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 20),
-            Text(
-              '$_counter',
-               style: const TextStyle(
-                fontFamily: "DynaPuff",
-                fontSize: 80,
-                color: Colors.grey,
+              const SizedBox(height: 20),
+              Text(
+                '$_counter',
+                style: const TextStyle(
+                  fontFamily: "DynaPuff",
+                  fontSize: 80,
+                  color: Colors.grey,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
