@@ -10,10 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      title: 'Flutter Native Splash & App Icon Generator',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -49,10 +48,21 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             const Text(
               'You have pushed the button this many times:',
+              style: TextStyle(
+                fontFamily: "DynaPuff",
+                fontSize: 20,
+                color: Colors.grey,
+              ),
+              textAlign: TextAlign.center,
             ),
+            const SizedBox(height: 20),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+               style: const TextStyle(
+                fontFamily: "DynaPuff",
+                fontSize: 80,
+                color: Colors.grey,
+              ),
             ),
           ],
         ),
